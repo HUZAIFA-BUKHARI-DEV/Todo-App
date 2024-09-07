@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgb(255, 215, 151) 10%, rgb(255, 255, 255) 50%);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+.body-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.425);
+    max-width: 2000px;
+    margin: 0 auto;
+}
+nav{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5%;
+}
+nav p{
+    color:rgb(255, 136, 0);
+    font-weight: bold;
+}
+nav p:hover{
+    transform: rotateY(360deg);
+    transition: transform 2s ;
+}
+nav button{
+    background-color:rgb(255, 136, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+nav button:hover{
+    background-color:orange;
+    color: rgb(255, 216, 145);
+}
+.container{
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 2vh;
+    max-width: 1500px;max-height: 1500px;
+}
+.home-container{
+    background-color: none;
+    /* background:linear-gradient(to left,rgb(255, 215, 151) 20%, rgba(255, 255, 255, 0) 65%) ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.task-container{
+    overflow: scroll;
+    scrollbar-width: none;
+    /* margin-top: 1.5vh; */
+}
+.login-container{
+    width: 50vh;
+    height: auto;
+    max-width: 1080px;
+    max-height: 1000px;
+    text-align: center;
+}
+.left-side{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    min-width: 350px;
+}
+.left-side h1{
+    color:rgb(255, 136, 0);
+    text-shadow:-3px 3px rgb(255, 220, 156) ;
+}
+.left-side p{
+    color:rgb(255, 136, 0);
+    text-shadow:-3px 3px rgb(255, 220, 156) ;
+    animation:bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+    
+}
+.left-side button{
+    background-color:rgb(255, 136, 0);
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin-top: 5px;
+}
+.left-side button:hover{
+    background-color:rgb(255, 136, 0);
+    color: rgb(255, 216, 145);
+}
+.right-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+}
+.right-side form input[type=text]{
+    width: 80%;
+    min-height: 60px;
+    min-width: 300px;
+    height: auto;
+    border: 3px solid rgb(255, 136, 0);
+    border-radius: 20px;
+    padding: 10px;
+    outline-color:rgb(255, 145, 0) ;
+    font-size: large;
+    caret-color:rgb(255, 136, 0) ;
+    color: rgb(255, 136, 0);
+}
+.right-side form label{
+    color:rgb(255, 136, 0);
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.right-side form input[type=submit]{
+    background-color:rgb(255, 136, 0);
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    color: white;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 51%;
+    margin-top: 35px;
+}
+.right-side form input[type=submit]:hover{
+    background-color:rgb(255, 136, 0);
+    color: rgb(255, 216, 145);
+}
+.heading h3{
+    color: rgb(255, 136, 0);
+    margin-bottom: 10px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    min-width: 800px;
+    text-align: center;
+    font-size: inherit;
+    color: rgb(51, 51, 51); 
+}
+th{
+    color:  rgb(255, 255, 255);
+    background-color:rgb(255, 136, 0);
+}
+td{
+    font-size:16pt;
+}
+.id{
+    background-color: rgb(255, 175, 27);
+}
+.task{
+    text-align: left;
+    padding-left: 25px;
+    background-color:rgba(255, 166, 0, 0.411) ;
+}
+.time{
+    background-color: rgb(255, 189, 65);
+}
+.date{
+    background-color: rgba(255, 166, 0, 0.411);
+}
+.status{
+    background-color: rgb(255, 189, 65);
+}
+.edit{
+    background-color: rgb(255, 255, 255);
+    border-end-end-radius: 5px;
+}
+.delete{
+    background-color: white;
+    border-end-end-radius: 5px;
+}
+.login-container fieldset{
+    border: 3px solid rgb(255, 136, 0);
+    padding: 25px;
+    height: 80%;
+    margin-top: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+.login-container legend{
+    text-align: center;
+    color: rgb(255, 136, 0);
+    font-size: 16pt;
+    font-weight: bold;
+    animation:bouncer 2s ease-in-out infinite;
+}
+@keyframes bouncer {
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+    
+}
+.login-container input{
+    width: 90%;
+    height: 40px;
+    margin-left:5%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding-left: 10px;
+    background-color:rgb(255, 255, 255) ;
+    color:rgb(255, 136, 0);
+    caret-color: rgb(255, 136, 0);
+    outline-color: rgb(255, 136, 0);
+}
+.login-container input[type=submit]{
+    background-color:rgb(255, 136, 0);
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.login-container input[type=submit]:hover{
+    background-color:rgb(255, 136, 0);
+    color: rgb(255, 216, 145);
+}
+.divert{
+    background-color:rgba(255, 136, 0, 0.692);
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.divert:hover{
+    background-color:rgb(255, 136, 0);
+    color: rgb(255, 255, 255);
+}
+.login-container label{
+    font-size: small;
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
